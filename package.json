@@ -1,19 +1,22 @@
 {
-    "name": "video-editor",
+    "name": "my-component",
     "version": "1.0.0",
     "description": "",
-    "author": "Piotr Kowalski <piecioshka@gmail.com> (https://piecioshka.pl)",
     "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "https://piecioshka.pl/"
+    },
     "scripts": {
         "test": "jest"
-    },
-    "dependencies": {
-        "@types/jest": "^25.2.2",
-        "jest": "^26.0.1"
     },
     "devDependencies": {
         "@babel/core": "^7.9.6",
         "@babel/preset-env": "^7.9.6",
-        "babel-jest": "^26.0.1"
-    }
+        "@types/jest": "^25.2.2",
+        "babel-jest": "^26.0.1",
+        "jest": "^26.0.1"
+    },
+    "dependencies": {}
 }

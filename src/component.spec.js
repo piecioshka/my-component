@@ -68,11 +68,11 @@ describe('Component', () => {
             }
             const c = new FakeComponent();
             c.render($fake);
-            spyOn(FakeComponent.prototype, 'render').and.callThrough();
+            spyOn(FakeComponent.prototype, 'update').and.callThrough();
             c.title = 'fake-title';
             c.title = 'fake-title';
             c.title = 'fake-title';
-            expect(c.render).toHaveBeenCalledTimes(1);
+            expect(c.update).toHaveBeenCalledTimes(1);
         });
 
         it('should update UI when model changed', () => {
@@ -87,12 +87,12 @@ describe('Component', () => {
             }
             const c = new FakeComponent();
             c.render($fake);
-            spyOn(FakeComponent.prototype, 'render').and.callThrough();
+            spyOn(FakeComponent.prototype, 'update').and.callThrough();
             c.title = 1;
             c.title = 2;
             c.title = 3;
             expect($fake.firstElementChild.textContent).toEqual('3');
-            expect(c.render).toHaveBeenCalledTimes(3);
+            expect(c.update).toHaveBeenCalledTimes(3);
         });
 
         it('should use relevant comparison (NaN problem)', () => {
@@ -107,11 +107,11 @@ describe('Component', () => {
             }
             const c = new FakeComponent();
             c.render($fake);
-            spyOn(FakeComponent.prototype, 'render').and.callThrough();
+            spyOn(FakeComponent.prototype, 'update').and.callThrough();
             c.title = NaN;
             c.title = NaN;
             c.title = NaN;
-            expect(c.render).toHaveBeenCalledTimes(1);
+            expect(c.update).toHaveBeenCalledTimes(1);
         });
 
         it('should contains only iterable properties', () => {
@@ -140,7 +140,7 @@ describe('Component', () => {
             $parent.append($child3);
         });
 
-        fit('should render component in the same order as is', () => {
+        it('should render component in the same order as is', () => {
             // Given
             class FakeComponent extends Component {
                 constructor() {
