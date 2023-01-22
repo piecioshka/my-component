@@ -2,7 +2,7 @@
 
 My implementation of component pattern.
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/my-component/demo/>
 
