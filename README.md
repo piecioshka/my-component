@@ -1,6 +1,8 @@
 # my-component
 
-My implementation of component pattern.
+My implementation of the component pattern.
+
+> Give a ⭐️ if this project helped you!
 
 ## Preview 🎉
 
@@ -16,10 +18,6 @@ npm test
 
 Contributions, issues and feature requests are welcome!<br />
 Feel free to check [issues page](https://github.com/piecioshka/my-component/issues/).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
 
 ## Related
 
