@@ -25,4 +25,4 @@ Feel free to check [issues page](https://github.com/piecioshka/my-component/issu
 
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2026
+[The MIT License](https://piecioshka.mit-license.org) @ 2026
